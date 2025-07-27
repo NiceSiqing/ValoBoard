@@ -56,7 +56,6 @@ export default function LoginTabs({onLoginSuccess}:LoginTabsProps) {
     if (error) {
       alert("Login failed: " + error.message);
     } else {
-      alert("Login successful!");
       onLoginSuccess();
     }
   }

@@ -48,8 +48,7 @@ a {
 
 /* 重置按钮样式 */
 button {
-  
-  
+
   padding: 0;
   font: inherit;
   cursor: pointer;
@@ -181,6 +180,15 @@ img, picture, video, canvas, svg {
 }
 
 @layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
   body {
     @apply bg-background text-foreground;
   }
